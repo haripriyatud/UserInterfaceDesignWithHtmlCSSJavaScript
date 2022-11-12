@@ -1,0 +1,19 @@
+<body>
+    <div>
+        <h3>Welcome <span id="title"></span> <span id="fname"></span> <span id="lname"></span> from  <span id="country"></span>. You are sucessfully registered in the system</h3>
+    </div>
+    <script>
+    function show() {
+         const urlParams = new URLSearchParams(window.location.search)
+         const firstname = urlParams.get('fname');
+         const lastname = urlParams.get('lname');
+         const title = urlParams.get('title');
+         const country = urlParams.get('country');
+         document.getElementById("fname").textContent = firstname;
+         document.getElementById("title").textContent = title;
+         document.getElementById("country").textContent = country;
+         document.getElementById("lname").textContent = lastname;
+}
+    show();
+    </script>
+</body>

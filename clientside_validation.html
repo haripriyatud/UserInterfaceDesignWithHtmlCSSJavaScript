@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  let age = document.forms["myForm"]["age"].value;
+  if (x == ""|| age=="") {
+    alert("All the fields must be filled out");
+    return false;
+  }
+
+  if (isNaN(age) || age < 0 || age > 100) {
+    alert('age not valid')
+    return false;
+   
+  }
+
+}
+</script>
+</head>
+<body>
+
+<h2>Registeration Form</h2>
+
+<form name="myForm" action="C:\Users\1572382\Desktop\PPTSessions\html-css-examples\startpage.html" onsubmit="return validateForm()" method="post">
+  
+  Name:<input type="text"  name="fname">
+  <br/>
+  <br/>
+
+  Age:   <input  type="number" name="age">
+
+  <br/>
+  <br/>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

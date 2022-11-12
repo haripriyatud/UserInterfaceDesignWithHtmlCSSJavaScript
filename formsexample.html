@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="C:\Users\1572382\Desktop\PPTSessions\html-css-examples\action_page.html" method="get">
+    <p>
+        <label>Title</label><br>
+        <label>
+          <input type="radio" name="title" value="Mr">
+          Mr
+        </label>
+        <label>
+          <input type="radio" name="title" value="Mrs">
+          Mrs
+        </label>
+        <label>
+          <input type="radio" name="title" value="Miss">
+          Miss
+        </label>
+      </p>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter your firstname" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Enter your lastname" required><br><br>
+
+  <p>
+    <label>Country</label><br>
+    <select name="country">
+      <option>China</option>
+      <option>India</option>
+      <option>United States</option>
+      <option>Indonesia</option>
+      <option>Brazil</option>
+    </select>
+  </p>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.html".</p>
+
+</body>
+</html>
